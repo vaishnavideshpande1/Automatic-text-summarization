@@ -1,0 +1,320 @@
+<html>
+
+<head>
+
+<title>Get Summary</title>
+
+<style type="text/css">
+h1{text-align:center;font-family:Cursive;color:0033FF;background-color:FFFFFF;}
+p {font-family:Cursive;font-size:14px;font-style:italic;font-weight:bold;color:000000;}
+
+body,html {
+        border: medium none;
+        width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+   font-family: verdana,helvetica,monospace;
+   font-size: 12px;
+   background: #565A5D;
+   position: relative;
+   background-color:#FFFFFF;
+   z-index: 0;
+}
+
+.header_main
+{
+        margin-top:38px;
+        display: block;
+        height: 39px;
+        left: 0;
+        margin: 0;
+        right: 0;
+        top: 0;
+        color:rgb(255, 255, 255);
+        visibility: visible;
+        width: 100%;
+        z-index: 0;
+        background: blue; /* Old browsers */
+        background: none repeat scroll 0 0%, -moz-linear-gradient(center top, blue 0%, #39393b 100%); /* FF3.6+ */
+        background: none repeat scroll 0 0%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#626265), color-stop(100%,#39393b)); /* Chrome,Safari4+ */
+        background: none repeat scroll 0 0%, -webkit-linear-gradient(top, #626265 0%,#39393b 100%); /* Chrome10+,Safari5.1+ */
+        background: none repeat scroll 0 0%, -o-linear-gradient(center top, #626265 0%,#39393b 100%); /* Opera 11.10+ */
+        background: none repeat scroll 0 0%, -ms-linear-gradient(center top, #626265 0%,#39393b 100%); /* IE10+ */
+        background: none repeat scroll 0 0%, linear-gradient(to bottom, #626265 0%,#39393b 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#626265', endColorstr='#39393b',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0 1px 0 rgba(160, 160, 160, 0.75) inset, 0 10px 0 #FFFFFF;
+
+
+}
+.logo_tab
+{
+     display: block;
+     height: 100%;
+     float:left;
+     left: 0;
+     right: 0;
+     top: 0;
+     visibility: visible;
+     width: 40%;
+     z-index: 0;
+}
+
+.user_name_div
+{
+     display: block;
+     height:100%;
+     float:left;
+     left: 0;
+     right: 0;
+     top: 0;
+     visibility: visible;
+     width:60%;
+     z-index: 0;
+    text-align:center;
+}
+
+.radio_div
+{
+ position:relative;
+ float:left;
+ left:45%;
+ top:45%; 
+}
+</style>
+</head>
+<body id="body">
+<div1>
+    <div class="header_main">
+         <div class="logo_tab">
+	    <span1><img src="img/logo.jpg"></span1>
+            <span2><img src="img/summ1.png" style="position:relative;float:top;left:65%;top:250%" /></span2>
+	    <span><img src="img/can-stock.jpg" style="position:relative;float:left;left:75%;top:365%" /></span>
+	    <span><img src="img/footer.png" style="position:relative;float:left;left:0%;bottom:300%" /></span>
+         </div>
+         <div class="user_name_div">
+              <big id='a_big_temp' style="color:#FFF;position:relative;float:center;right:34%;font-size:25px;font-weight:bold;" title="project name"> Automatic Text Summarization </big>
+        </div>
+   </div>
+   <div class='radio_div'>
+      <input type='radio' name='action_type_buttons'  value='B' checked><b>Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></input>
+      <input type='radio' name='action_type_buttons' value='M'><b>Movies&nbsp;&nbsp;&nbsp;&nbsp;</b></input>
+      <input type='radio' name='action_type_buttons' value='P'><b>Places&nbsp;&nbsp;&nbsp;&nbsp;</b></input>
+   </div>
+<div2>
+
+<script>
+  (function() {
+    var cx = '008626930441441283004:azcv24ns3_0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+      var search_flag=1;
+      var input_div=1;
+      var sv=setInterval(function()
+      { 
+           if(document.getElementById("gsc-i-id1"))  document.getElementById("gsc-i-id1").style.background=""; 
+          if(document.getElementsByClassName("gsc-results-wrapper-nooverlay gsc-results-wrapper-visible")[0])
+          {  
+             document.getElementsByClassName("gsc-results-wrapper-nooverlay gsc-results-wrapper-visible")[0].style.display="none";
+             store(sv);
+          }
+	  if(document.getElementsByClassName("gsc-search-button")[1] && search_flag)
+          {
+             search_flag=0;
+	     var button=document.getElementsByClassName("gsc-search-button")[1];
+              button.setAttribute("value","Get Summary"); 
+          }
+	  if(document.getElementById("___gcse_0") && input_div)
+          {
+              input_div=0;
+	      var div=document.getElementById("___gcse_0");
+              var style="position:relative;top:32%;background:none;"
+              div.setAttribute("style",style);
+              var input=document.getElementsByClassName("gsc-control-wrapper-cse")[0] 
+              style="position:relative;left:18%;width:40%;"
+              input.setAttribute('style',style);
+              var child_div=div.getElementsByTagName("div")[0];
+              style='background:none;border:none;'
+              child_div.setAttribute("style",style);    
+              document.getElementsByClassName("gsc-clear-button")[0].style.display="none"; 
+          }
+       }, 1); 
+    
+  })();
+
+function load_image_div(id,msg)
+{
+
+        canvas =document.createElement('canvas');
+        canvas.setAttribute('id', "loading_image_canvas");
+        var width = document.getElementById(id).offsetWidth;
+        var height = document.getElementById(id).offsetHeight;
+        canvas.setAttribute('width', width);
+        canvas.setAttribute('height',height);
+        var style = "position:absolute; top:0px; left:0px;background:#FFFFFF;opacity:0.4;";
+        style += " z-index:99999999997;";
+        canvas.setAttribute('style', style);
+        context=canvas.getContext('2d');
+        document.getElementById(id).appendChild(canvas);
+
+
+        var div=document.createElement("div");
+        div.id="load_image_div"
+        var style='float:left;position:absolute;top:75px;left:35%;width:300px;height:300px;z-index:99999999998;background:url(\"img/loading_big_2.gif\") no-repeat;'
+        div.setAttribute("style",style);
+        document.getElementById(id).appendChild(div);
+
+        var div2=document.createElement("div");
+        div2.id="load_text_div"
+        var style='float:left;position:absolute;top:377px;left:27%;width:500px;height:100px;z-index:99999999998;background:#F5F5F5;margin-top:1%;';
+        div2.setAttribute("style",style);
+        document.getElementById(id).appendChild(div2);
+       var str="<p style=\"position:relative;left:10%; top:15px;color:Coral; font-weight:bold;font-size:25px;\" id='msg_p'>"+msg+"</p>";
+       document.getElementById("load_text_div").innerHTML=str;
+
+
+}
+
+
+function clear_canvas()
+{
+  document.getElementById("loading_image_canvas").remove();
+  document.getElementById("load_image_div").remove();
+  document.getElementById("load_text_div").remove();
+
+}
+
+
+
+
+function store(sv)
+{
+    clearInterval(sv);
+    var r_bs=document.getElementsByName("action_type_buttons")
+    var action_type='';
+    for(j=0;j<r_bs.length;j++)
+    {
+        if(r_bs[j].checked	)
+        { 
+          action_type=r_bs[j].value; 
+          break;
+        }
+    }
+    var arr = document.querySelectorAll('[class="gs-title"] a');
+    //alert(arr); 
+    var sendarr=[];
+    for(var i=0;i<3;i++)
+    {
+       //alert(arr[i].href);
+       sendarr[i]=arr[i].href;
+    }
+     var keyword=document.getElementById("gsc-i-id1").value;
+     var final_str=sendarr.join('^!!^');         
+     var vservice_path = "http://localhost/cgi-bin/"+"cgi_store.py?input_str=";
+     var jsonObj = {"store_key":final_str,"search_key":keyword}
+     var strURL  = vservice_path + JSON.stringify(jsonObj);
+     var self = this;
+     alert(strURL);
+     load_image_div("body","extracting data please wait...!!!")
+     if (window.XMLHttpRequest)
+     {
+        self.xmlHttpReq = new XMLHttpRequest();
+     }
+     else if (window.ActiveXObject)
+     {
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+     }
+     self.xmlHttpReq.onreadystatechange = function ()
+     {
+        if (self.xmlHttpReq.readyState == 4)
+        {
+            if (self.xmlHttpReq.status == 200)
+            {
+                      var vret = self.xmlHttpReq.responseText;
+                      var li=eval(vret)
+                      //window.open(li[0],'summary')
+                      if (li[1]!="No data found")
+		      {  alert("Data Stored successfully in files");
+                         get_summary(action_type,keyword); 
+                      }
+                      else
+                      {
+                        alert("No Data Found")
+                        clear_canvas();
+                      } 
+                      //window.location.replace("http://localhost/sample.html",'sucess');
+
+            }
+            /*else
+            {
+                    alert("Error retrieving the data:\n" + self.xmlHttpReq.statusText);
+            }*/
+        }
+     }
+     self.xmlHttpReq.open('GET', strURL, false);
+     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+     params ='';
+     self.xmlHttpReq.send( params );
+}
+
+function get_summary(action_type,keyword)
+{
+     var cgi_name = ''; 
+     if (action_type=='B')cgi_name = "cgi_book.py";
+     else if(action_type=='P')cgi_name="cgi_place.py";
+     else cgi_name="cgi_movies.py"; 
+     var vservice_path = "http://localhost/cgi-bin/"+cgi_name+"?input_str=";
+     var jsonObj = {"search_key":keyword}
+     var strURL  = vservice_path + JSON.stringify(jsonObj);
+     var self = this;
+     alert(strURL);
+     //load_image_div("body","extracting data please wait...!!!")
+     if (window.XMLHttpRequest)
+     {
+        self.xmlHttpReq = new XMLHttpRequest();
+     }
+     else if (window.ActiveXObject)
+     {
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+     }
+     self.xmlHttpReq.onreadystatechange = function ()
+     {
+        if (self.xmlHttpReq.readyState == 4)
+        {
+            if (self.xmlHttpReq.status == 200)
+            {
+                      var vret = self.xmlHttpReq.responseText;
+                      var li=eval(vret)
+                      window.open(li[0],'summary')
+                      window.location.replace(li[0],'sucess');
+                      //clear_canvas();
+                      //get_summary(action_type,keyword); 
+                      //alert("Data Stored successfully in the data.txt file");
+                      //window.location.replace("http://localhost/sample.html",'sucess');
+
+            }
+            /*else
+            {
+                    alert("Error retrieving the data:\n" + self.xmlHttpReq.statusText);
+            }*/
+        }
+     }
+     self.xmlHttpReq.open('GET', strURL, false);
+     self.xmlHttpReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+     params ='';
+     self.xmlHttpReq.send( params );
+} 
+</script>
+
+
+<gcse:search></gcse:search>
+</div1></div2>
+</body>
+
+</html>
